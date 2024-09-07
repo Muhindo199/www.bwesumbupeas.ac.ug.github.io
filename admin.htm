@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html class="wp-toolbar"
+	lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Backup &lsaquo; www.bwesumbupeas.ac.ug &#8212; WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!=='undefined')jQuery(function(){func();});else if(typeof wpOnload!=='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/githubfile/wp-admin/admin-ajax.php',
+	pagenow = 'wpbackitup_page_wp-backitup-backup',
+	typenow = '',
+	adminpage = 'wpbackitup_page_wp-backitup-backup',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='stylesheet' href='http://localhost/githubfile/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load%5Bchunk_0%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;load%5Bchunk_1%5D=,site-icon,l10n,buttons,wp-auth-check&amp;ver=6.5' media='all' />
+<style>
+@media print { #wpadminbar { display:none; } }
+</style>
+<link rel='stylesheet' id='wp-backitup-admin-css' href='http://localhost/githubfile/wp-content/plugins/wp-backitup/css/wp-backitup-admin.min.css?ver=1.50.0.0' media='screen' />
+<link rel='stylesheet' id='fontawesome-fonts-css' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css?ver=6.5' media='all' />
+<link rel='stylesheet' id='google-fonts-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=6.5' media='all' />
+<link rel='stylesheet' id='wp-backitup_vue_tab-css' href='http://localhost/githubfile/wp-content/plugins/wp-backitup/css/vue-tabs.min.css?ver=1.50.0.0' media='' />
+<link rel='stylesheet' id='wp-backitup_vue_keen_ui-css' href='http://localhost/githubfile/wp-content/plugins/wp-backitup/css/keen-ui.min.css?ver=1.50.0.0' media='' />
+<link rel='stylesheet' id='wp-backitup_vue_pretty_checkbox_ui-css' href='http://localhost/githubfile/wp-content/plugins/wp-backitup/css/pretty-checkbox.min.css?ver=1.50.0.0' media='' />
+<link rel='stylesheet' id='wp-backitup_vue_element_ui-css' href='http://localhost/githubfile/wp-content/plugins/wp-backitup/css/element-ui.min.css?ver=1.50.0.0' media='' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='astra-theme-builder-style-css' href='http://localhost/githubfile/wp-content/themes/astra/admin/assets/theme-builder/build/index.css?ver=4.6.16' media='all' />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/githubfile\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+
+<script>
+/* <![CDATA[ */
+var userSettings = {"url":"\/githubfile\/","uid":"1","time":"1725630717","secure":""};/* ]]> */
+</script>
+<script src='http://localhost/githubfile/wp-admin/load-scripts.php?c=1&amp;load%5Bchunk_0%5D=jquery-core,jquery-migrate,utils&amp;ver=6.5'></script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/vue.min.js?ver=1.50.0.0" id="wp-backitup_vue-js"></script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/vue-tabs.min.js?ver=1.50.0.0" id="wp-backitup_vue_tabs-js"></script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/sweetalert.min.js?ver=1.50.0.0" id="wp-backitup_jquery_sweetalert-js"></script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/keen-ui.min.js?ver=1.50.0.0" id="wp-backitup_vue_keen_ui-js"></script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/pretty-checkbox-vue.min.js?ver=1.50.0.0" id="wp-backitup_vue_pretty_checkbox_ui-js"></script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/element-ui.min.js?ver=1.50.0.0" id="wp-backitup_vue_pretty_element_ui-js"></script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/wp-backitup-components.min.js?ver=1.50.0.0" id="wp-backitup_vue_components-js"></script>
+<style>#wpadminbar #wp-admin-bar-wpbackitup_notices .ab-icon:before { content: '\f321'; top: 2px;}</style><script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#a7aaad","focus":"#72aee6","current":"#fff"}};</script>
+	<link id="wp-admin-canonical" rel="canonical" href="http://localhost/githubfile/wp-admin/admin.php?page=wp-backitup-backup" />
+	<script>
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );
+		}
+	</script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"></head>
+<body class="wp-admin wp-core-ui no-js ast-highlight-wpblock-onhover ast-default-content-style-boxed ast-default-sidebar-unboxed ast-default-layout-boxed-container ast-separate-container ast-two-container ast-block-custom ast-no-sidebar ast-sidebar-default-   wpb-main wpbackitup_page_wp-backitup-backup auto-fold admin-bar branch-6-5 version-6-5 admin-color-fresh locale-en-us no-customize-support no-svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+<script>
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	
+</script>
+
+<div id="wpwrap">
+
+<div id="adminmenumain" role="navigation" aria-label="Main menu">
+<a href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+<a href="#wp-toolbar" class="screen-reader-shortcut">Skip to toolbar</a>
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<ul id="adminmenu">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" id="menu-dashboard">
+	<a href='index.php' class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-dashboard' aria-hidden='true'><br /></div><div class='wp-menu-name'>Dashboard</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Dashboard</li><li class="wp-first-item"><a href='index.php' class="wp-first-item">Home</a></li><li><a href='update-core.php'>Updates <span class="update-plugins count-8"><span class="update-count">8</span></span></a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" id="menu-posts">
+	<a href='edit.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-post' aria-hidden='true'><br /></div><div class='wp-menu-name'>Posts</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Posts</li><li class="wp-first-item"><a href='edit.php' class="wp-first-item">All Posts</a></li><li><a href='post-new.php'>Add New Post</a></li><li><a href='edit-tags.php?taxonomy=category'>Categories</a></li><li><a href='edit-tags.php?taxonomy=post_tag'>Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href='upload.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-media' aria-hidden='true'><br /></div><div class='wp-menu-name'>Media</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Media</li><li class="wp-first-item"><a href='upload.php' class="wp-first-item">Library</a></li><li><a href='media-new.php'>Add New Media File</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href='edit.php?post_type=page' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-page' aria-hidden='true'><br /></div><div class='wp-menu-name'>Pages</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Pages</li><li class="wp-first-item"><a href='edit.php?post_type=page' class="wp-first-item">All Pages</a></li><li><a href='post-new.php?post_type=page'>Add New Page</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments" id="menu-comments">
+	<a href='edit-comments.php' class="wp-not-current-submenu menu-top menu-icon-comments" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-comments' aria-hidden='true'><br /></div><div class='wp-menu-name'>Comments <span class="awaiting-mod count-0"><span class="pending-count" aria-hidden="true">0</span><span class="comments-in-moderation-text screen-reader-text">0 Comments in moderation</span></span></div></a></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_wpcf7 menu-top-last" id="toplevel_page_wpcf7"><a href='admin.php?page=wpcf7' class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_wpcf7 menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-email' aria-hidden='true'><br /></div><div class='wp-menu-name'>Contact</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Contact</li><li class="wp-first-item"><a href='admin.php?page=wpcf7' class="wp-first-item">Contact Forms</a></li><li><a href='admin.php?page=wpcf7-new'>Add New</a></li><li><a href='admin.php?page=wpcf7-integration'>Integration</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_astra menu-top-first" id="toplevel_page_astra"><a href='admin.php?page=astra' class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_astra menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image svg' style="background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzcyIiBoZWlnaHQ9Ijc3MiIgdmlld0JveD0iMCAwIDc3MiA3NzIiIGZpbGw9IiNhN2FhYWQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTM4NiA3NzJDNTk5LjE4MiA3NzIgNzcyIDU5OS4xODIgNzcyIDM4NkM3NzIgMTcyLjgxOCA1OTkuMTgyIDAgMzg2IDBDMTcyLjgxOCAwIDAgMTcyLjgxOCAwIDM4NkMwIDU5OS4xODIgMTcyLjgxOCA3NzIgMzg2IDc3MlpNMjYxLjcxMyAzNDMuODg2TDI2MS42NzUgMzQzLjk2OEMyMjIuNDE3IDQyNi45OTQgMTgzLjE1OSA1MTAuMDE5IDE0My45MDIgNTkyLjk1MkgyNDQuODQ3QzI3Ni42MjcgNTI4LjczOSAzMDguNDA3IDQ2NC40MzQgMzQwLjE4NyA0MDAuMTI4QzM3MS45NjUgMzM1LjgyNyA0MDMuNzQyIDI3MS41MjcgNDM1LjUyIDIwNy4zMkwzNzkuNDQgOTVDMzQwLjE5NyAxNzcuOSAzMDAuOTU1IDI2MC44OTMgMjYxLjcxMyAzNDMuODg2Wk00MzYuNjczIDQwNC4wNzVDNDUyLjkwNiAzNzAuNzQ1IDQ2OS4xMzkgMzM3LjQxNSA0ODUuNDY3IDMwNC4wODVDNTA5LjMwMSAzNTIuMjI5IDUzMy4wNDIgNDAwLjM3NCA1NTYuNzgyIDQ0OC41MThDNTgwLjUyMyA0OTYuNjYzIDYwNC4yNjQgNTQ0LjgwNyA2MjguMDk4IDU5Mi45NTJINTE5LjI0OEM1MTMuMDU0IDU3OC42OTMgNTA2Ljc2NyA1NjQuNTI3IDUwMC40OCA1NTAuMzYyQzQ5NC4xOTMgNTM2LjE5NiA0ODcuOTA2IDUyMi4wMzEgNDgxLjcxMyA1MDcuNzczSDM4NkwzODcuODc3IDUwNC4wNjlDNDA0LjIwNSA0NzAuNzM4IDQyMC40MzkgNDM3LjQwNiA0MzYuNjczIDQwNC4wNzVaIiBmaWxsPSIjYTdhYWFkIi8+DQo8L3N2Zz4=')" aria-hidden='true'><br /></div><div class='wp-menu-name'>Astra</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Astra</li><li class="wp-first-item"><a href='admin.php?page=astra' class="wp-first-item">Dashboard</a></li><li><a href='customize.php'>Customize</a></li><li><a href='admin.php?page=theme-builder-free'>Site Builder</a></li><li><a href='admin.php?page=astra&path=spectra'>Spectra</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance" id="menu-appearance">
+	<a href='themes.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-appearance' aria-hidden='true'><br /></div><div class='wp-menu-name'>Appearance</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Appearance</li><li class="wp-first-item"><a href='themes.php' class="wp-first-item">Themes <span class="update-plugins count-4"><span class="theme-count">4</span></span></a></li><li><a href='edit.php?post_type=wp_block'>Patterns</a></li><li class="hide-if-no-customize"><a href='customize.php?return=%2Fgithubfile%2Fwp-admin%2Fadmin.php%3Fpage%3Dwp-backitup-backup' class="hide-if-no-customize">Customize</a></li><li><a href='widgets.php'>Widgets</a></li><li><a href='nav-menus.php'>Menus</a></li><li><a href='theme-editor.php'>Theme File Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<a href='plugins.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-plugins' aria-hidden='true'><br /></div><div class='wp-menu-name'>Plugins <span class="update-plugins count-3"><span class="plugin-count">3</span></span></div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Plugins <span class="update-plugins count-3"><span class="plugin-count">3</span></span></li><li class="wp-first-item"><a href='plugins.php' class="wp-first-item">Installed Plugins</a></li><li><a href='plugin-install.php'>Add New Plugin</a></li><li><a href='plugin-editor.php'>Plugin File Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href='users.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-users' aria-hidden='true'><br /></div><div class='wp-menu-name'>Users</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Users</li><li class="wp-first-item"><a href='users.php' class="wp-first-item">All Users</a></li><li><a href='user-new.php'>Add New User</a></li><li><a href='profile.php'>Profile</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href='tools.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-tools' aria-hidden='true'><br /></div><div class='wp-menu-name'>Tools</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Tools</li><li class="wp-first-item"><a href='tools.php' class="wp-first-item">Available Tools</a></li><li><a href='import.php'>Import</a></li><li><a href='export.php'>Export</a></li><li><a href='site-health.php'>Site Health <span class="menu-counter site-health-counter count-3"><span class="count">3</span></span></a></li><li><a href='export-personal-data.php'>Export Personal Data</a></li><li><a href='erase-personal-data.php'>Erase Personal Data</a></li></ul></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top toplevel_page_wp-backitup" id="toplevel_page_wp-backitup"><a href='admin.php?page=wp-backitup-backup' class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top toplevel_page_wp-backitup" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-backup' aria-hidden='true'><br /></div><div class='wp-menu-name'>WPBackItUp</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>WPBackItUp</li><li class="wp-first-item current"><a href='admin.php?page=wp-backitup-backup' class="wp-first-item current" aria-current="page">Backup</a></li><li><a href='admin.php?page=wp-backitup-support'>Support</a></li><li><a href='admin.php?page=wp-backitup-settings'>Settings</a></li><li><a href='admin.php?page=wp-backitup-about'>About</a></li><li><a href='admin.php?page=wp-backitup-about&#038;tab=premium'>Get Premium <span class='dashicons dashicons-admin-network wpbackitup-get-premium'></span></a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<a href='options-general.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-settings' aria-hidden='true'><br /></div><div class='wp-menu-name'>Settings</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Settings</li><li class="wp-first-item"><a href='options-general.php' class="wp-first-item">General</a></li><li><a href='options-writing.php'>Writing</a></li><li><a href='options-reading.php'>Reading</a></li><li><a href='options-discussion.php'>Discussion</a></li><li><a href='options-media.php'>Media</a></li><li><a href='options-permalink.php'>Permalinks</a></li><li><a href='options-privacy.php'>Privacy</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_simply-static-generate menu-top-first menu-top-last" id="toplevel_page_simply-static-generate"><a href='admin.php?page=simply-static-generate' class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_simply-static-generate menu-top-first menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before' aria-hidden='true'><img src="http://localhost/githubfile/wp-content/plugins/simply-static/assets/simply-static-icon.svg" alt="" /></div><div class='wp-menu-name'>Simply Static</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Simply Static</li><li class="wp-first-item"><a href='admin.php?page=simply-static-generate' class="wp-first-item">Generate</a></li><li><a href='admin.php?page=simply-static-settings'>Settings</a></li></ul></li><li id="collapse-menu" class="hide-if-no-js"><button type="button" id="collapse-button" aria-label="Collapse Main menu" aria-expanded="true"><span class="collapse-button-icon" aria-hidden="true"></span><span class="collapse-button-label">Collapse menu</span></button></li></ul>
+</div>
+</div>
+<div id="wpcontent">
+
+		<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul role='menu' id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-menu-toggle'><a class='ab-item' role="menuitem" href='#'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">Menu</span></a></li><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='http://localhost/githubfile/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='About WordPress' id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/about.php'>About WordPress</a></li><li id='wp-admin-bar-contribute'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/contribute.php'>Get Involved</a></li></ul><ul role='menu' aria-label='About WordPress' id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' role="menuitem" href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' role="menuitem" href='https://wordpress.org/documentation/'>Documentation</a></li><li id='wp-admin-bar-learn'><a class='ab-item' role="menuitem" href='https://learn.wordpress.org/'>Learn WordPress</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' role="menuitem" href='https://wordpress.org/support/forums/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' role="menuitem" href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='http://localhost/githubfile/'>www.bwesumbupeas.ac.ug</a><div class="ab-sub-wrapper"><ul role='menu' aria-label='www.bwesumbupeas.ac.ug' id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-view-site'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-updates'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/update-core.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label" aria-hidden="true">8</span><span class="screen-reader-text updates-available-text">8 updates available</span></a></li><li id='wp-admin-bar-comments'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/edit-comments.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li><li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='http://localhost/githubfile/wp-admin/post-new.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='New' id='wp-admin-bar-new-content-default' class="ab-submenu"><li id='wp-admin-bar-new-post'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/post-new.php'>Post</a></li><li id='wp-admin-bar-new-media'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/media-new.php'>Media</a></li><li id='wp-admin-bar-new-page'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/post-new.php?post_type=page'>Page</a></li><li id='wp-admin-bar-new-user'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/user-new.php'>User</a></li></ul></div></li><li id='wp-admin-bar-wpbackitup_notices' class="wpbackitup-notices"><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/admin.php?page=wp-backitup-backup' target='_self' title='All systems go!'><span class="ab-icon"></span><span>WPBackItUp</span> </a></li></ul><ul role='menu' id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' role="menuitem" aria-expanded="false" href='http://localhost/githubfile/wp-admin/profile.php'>Howdy, <span class="display-name">githubfile</span><img alt='' src='http://0.gravatar.com/avatar/f9fd6f2a404ec9464bf4f7aafdcab75f?s=26&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f9fd6f2a404ec9464bf4f7aafdcab75f?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy' decoding='async'/></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Howdy, githubfile' id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-admin/profile.php'><img alt='' src='http://0.gravatar.com/avatar/f9fd6f2a404ec9464bf4f7aafdcab75f?s=64&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f9fd6f2a404ec9464bf4f7aafdcab75f?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy' decoding='async'/><span class='display-name'>githubfile</span><span class='display-name edit-profile'>Edit Profile</span></a></li><li id='wp-admin-bar-logout'><a class='ab-item' role="menuitem" href='http://localhost/githubfile/wp-login.php?action=logout&#038;_wpnonce=4d9184d7cd'>Log Out</a></li></ul></div></li></ul>			</div>
+		</div>
+
+		
+<div id="wpbody" role="main">
+
+<div id="wpbody-content">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden no-sidebar" tabindex="-1" aria-label="Contextual Help Tab">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+												</ul>
+					</div>
+
+					
+					<div class="contextual-help-tabs-wrap">
+											</div>
+				</div>
+			</div>
+				</div>
+		<div class="notice notice-warning update-nag inline"><a href="https://wordpress.org/documentation/wordpress-version/version-6-6-1/">WordPress 6.6.1</a> is available! <a href="http://localhost/githubfile/wp-admin/update-core.php" aria-label="Please update WordPress now">Please update now</a>.</div>
+<div class="wpbackitup-topbar">
+    <a class="wpbackitup-logo" title="WPBackItUp" target="_blank" href="http://www.wpbackitup.com">
+    <img height="60" src="http://localhost/githubfile/wp-content/plugins/wp-backitup/images/wpbackitup-logo-small.png">
+    </a>
+    <h2>WPBackItUp Backup &amp; Restore </h2>
+    </div>
+
+
+
+<div style="overflow: hidden; display:none" id="wp-backitup-notification-parent" class="updated">
+        <div style="float:left;" id="wp-backitup-notification-message" ></div>
+        <div style="float:right;"><p><a id="wp-backitup-notification-close"><i style="float:right" class="fas fa-times-circle"> Close</i></a></p></div>
+    </div>
+<script type="text/javascript">var __namespace = "wp-backitup";</script>
+<div class="wrap" id="wpbackitup-core-backup" v-cloak>
+  <h2></h2>
+
+  <div id="content">
+
+    <!--Manual Backups-->
+    <div class="widget">
+      <h3><i class="fas fa-cogs"></i> Backup</h3>
+      <p><b>Click the backup button to create a zipped backup file of this site's database, plugins, themes and settings.</b></p>
+      <p>Once your backup file has been created it will appear in the available backups section below. This file may remain on your hosting providers server but we recommend that you download and save it somewhere safe.</p>
+      <p> WPBackItUp premium customers can use these backup files to perform an automated restore of their site.</p>
+      <p>
+                      <input type="submit" id="backup-button" class="backup-button button-primary" value="Backup"/>
+            <input type="submit" id="cancel-button" class="button-red cancel-button button-secondary button-hidden" value="Cancel"/>
+	                    <img class="backup-icon status-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" />
+                </p>
+      <p> * WPBackItUp lite customers may use these backup files to manually restore their site.  Please visit <a href="http://support.wpbackitup.com/support/solutions/articles/5000676459-how-to-manually-restore-your-wordpress-database/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=backup&utm_term=manual+restore" target="_blank">support.wpbackitup.com</a> for manual restore instructions.</p>    </div>
+
+   
+    <!--Available Backups section-->
+    <div class="widget">
+      <h3><i class="fas fa-cloud-download-alt"></i> Available Backups</h3>
+
+    <!--View Log Form-->
+    <form id = "viewlog" name = "viewlog" action="http://localhost/githubfile/wp-admin/admin-post.php" method="post">
+        <input type="hidden" name="action" value="viewlog">
+        <input type="hidden" id="backup_name" name="backup_name" value="">
+        <input type="hidden" id="_wpnonce" name="_wpnonce" value="94e4611360" /><input type="hidden" name="_wp_http_referer" value="/githubfile/wp-admin/admin.php?page=wp-backitup-backup" />    </form>
+
+
+    <form id = "download_backup" name = "download_backup" action="http://localhost/githubfile/wp-admin/admin-post.php" method="post">
+	    <input type="hidden" name="action" value="download_backup">
+	    <input type="hidden" id="backup_file" name="backup_file" value="">
+	    <input type="hidden" id="_wpnonce" name="_wpnonce" value="66bca1d053" /><input type="hidden" name="_wp_http_referer" value="/githubfile/wp-admin/admin.php?page=wp-backitup-backup" />    </form>
+
+      <table class="widefat" id="datatable">
+          <thead>
+            <tr>
+                <th>Backup</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Duration</th>
+                <th>Status</th>
+                <th>&nbsp;</th>
+	            <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr v-if="isNewRowAvailable" is="backup-row"
+              class="success-grid"
+              :name="backupNewRow.name"
+              :type="backupNewRow.type"
+              :date="backupNewRow.date"
+              :duration="backupNewRow.duration"
+              :status="backupNewRow.status"
+              :row="backupNewRow.row"
+              :job-id="backupNewRow.jobId"
+              :zip-exist="backupNewRow.zipExist"
+          >
+          </tr>
+                      <tr is="backup-row"
+                  name="localhost-githubfile_17256297262555"
+                  type="manual"
+                  date="2024-09-06 13:35:41"
+                  duration=" 8m 53s"
+                  status="Success"
+                  row="0"
+                  job-id="17256297262555"
+                  zip-exist="1"
+              >
+              </tr>
+                      </tbody>
+      </table>
+
+      <p>* The automated restore feature is only available to WPBackItUp premium customers.  Please visit <a href="https://www.wpbackitup.com/pricing-purchase/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=available+backups&utm_term=risk+free" target="_blank">www.wpbackitup.com</a> to get WPBackItUp risk free for 30 days.</p>    </div>
+
+    <div id="status" class="widget">
+      <h3><i class="far fa-check-square"></i> Status</h3>
+
+      <!--default status message-->
+      <ul class="default-status">
+        <li>Nothing to report</li>
+      </ul>
+
+      <!--backup status messages-->
+      <ul class="backup-status">
+        <li class="preparing">Preparing for backup...<span class='status-icon'><img class="preparing-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+        <li class='create_inventory'>Creating inventory of files to backup...<span class='status-icon'><img class="create_inventory-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+        <li class='exportdb'>Exporting database...<span class='status-icon'><img class="exportdb-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+        <li class='backupdb'>Backing up database...<span class='status-icon'><img class="backupdb-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+	    <li class='backup_themes'>Backing up themes...<span class='status-icon'><img class="backup_themes-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+	    <li class='backup_plugins'>Backing up plugins...<span class='status-icon'><img class="backup_plugins-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+	    <li class='backup_uploads'>Backing up uploads...<span class='status-icon'><img class="backup_uploads-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+	    <li class='backup_other'>Backing up everything else...<span class='status-icon'><img class="backup_other-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+	    <li class='validate_backup'>Validating backup...<span class='status-icon'><img class="validate_backup-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+                <li class='finalize_backup'>Finalizing backup...<span class='status-icon'><img class="finalize_backup-icon" src="http://localhost/githubfile/wp-content/plugins/wp-backitup//images/loader.gif" height="16" width="16" /></span><span class='status'>Done</span><span class='fail error'>Failed</span><span class='wpbackitup-warning'>Warning</span></li>
+      </ul>
+
+      <!--Error status messages-->
+      <ul class="backup-error">
+	      <!--Warning PlaceHolder-->
+      </ul>
+
+         <!--success messages-->
+  	  <ul class="backup-success">
+  		  <li class='isa_success'>Backup completed successfully.</li>
+  	  </ul>
+
+        <ul class="backup-warning">
+  	      <!--Warning PlaceHolder-->
+  	  </ul>
+
+        <!--cancelled messages-->
+        <ul class="backup-cancelled">
+          <li class='isa_cancelled'>Backup Cancelled.</li>
+      </ul>
+
+
+    </div>
+
+  </div> <!--content-->
+
+  <div id="sidebar">
+
+
+          <div class="widget">
+              <h3 class="promo">Backups <span style="float: right">Version 1.5</span></h3>
+              
+                              <p>Congratulations! You have performed <span style="font-weight:bold;font-size:medium;color: green">1</span> successful backups.</p>
+                <p><span style="font-weight:bold;font-size:medium">Tips</span>
+                   <br/>1)&nbsp;Backup your site at least once per week                   <br/>2)&nbsp;Download all your backups and store them somewhere safe                   <br/>3)&nbsp;Verify your backup files are good by taking a look at what's inside                </p>
+              
+          </div>
+
+
+                    <div class="widget">
+                  <h3 class="promo"><span>Register WPBackItUp</span></h3>
+                  <form action="" method="post" id="wp-backitup-form">
+                      <input type="hidden" id="_wpnonce" name="_wpnonce" value="d45d8a9d0c" /><input type="hidden" name="_wp_http_referer" value="/githubfile/wp-admin/admin.php?page=wp-backitup-backup" />                      <p>Enter your name and email address below to receive <b>special offers</b> and access to our world class <b>support</b> team.  <br /></p>
+                      <input type="text" name="license_name" id="license_name" placeholder="name" /><br/>
+                      <input type="text" name="license_email" id="license_email" placeholder="email address" /><br/>
+                      <div class="submit"><input type="submit" name="Submit" class="button-secondary" value="Register" /></div>
+                  </form>
+              </div>
+                
+    <!-- Display links widget -->
+    <div class="widget">
+          <h3 class="promo">Useful Links</h3>
+          <ul>
+              <li><a href="http://support.wpbackitup.com/support/solutions/articles/5000691574-wp-backitup-getting-started-video/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=useful+links&utm_term=getting+started+video" target="_blank">Getting Started Video</a></li>
+
+              <li><a href="https://www.wpbackitup.com/account/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=useful+links&utm_term=your+account" target="_blank">Your account</a></li>
+              <li><a href="http://support.wpbackitup.com/support/solutions/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=useful+links&utm_term=documentation" target="_blank">Documentation</a></li>
+
+              <li><a href="https://www.wpbackitup.com/contact/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=useful+links&utm_term=feature+request" target="_blank">Feature request</a></li>
+
+	          <li><a href="https://www.wpbackitup.com/blog/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=blog&utm_term=blog" target="_blank">Blog</a></li>
+
+              <li><a href="https://www.wpbackitup.com/contact/?utm_medium=plugin&utm_source=wp-backitup&utm_campaign=lite&utm_content=useful+links&utm_term=contact" target="_blank">Contact</a></li>
+
+          </ul>
+    </div>
+  </div><!--Sidebar-->
+
+</div> <!--wrap-->
+
+
+<span class="hidden" id="popupbox">
+  </span>
+
+
+<!-- Vue Js component from schedule modal -->
+<script type="text/x-template" id="schedule-modal-template">
+	<div class="schedule-component" style="display:inline">
+			<input @click="openModal('schedule')" type="submit" id="schedule-button" class="schedule-button button-secondary" value="Schedule"/>
+
+			<!-- Schedule modals -->
+			<div class="page__schedule">
+					<ui-modal ref="schedule" title="Backup Schedule">
+							<div class="schedule-alert">
+								<ui-alert @dismiss="scheduleAlert = false" type="success" v-show="scheduleAlert">
+										Successfully Saved!								</ui-alert>
+								<ui-alert @dismiss="scheduleErrorAlert = false" type="error" v-show="scheduleErrorAlert">
+										Failed to Saved!								</ui-alert>
+							</div>
+
+							<div class="schedule-form">
+								 <div class="sform-element">
+										<p>Name (Optional)</p>
+										<el-input placeholder="Please input" v-model="name"></el-input>
+								 </div>
+
+								 <div class="sform-element">
+										<p>Start Date</p>
+										<ui-datepicker
+												 placeholder="Select a date"
+												 v-model="startDate"
+										 ></ui-datepicker>
+								 </div>
+
+								 <div class="sform-element">
+										<p>Backup Every</p>
+										 <el-select v-model="frequency" placeholder="Select">
+										    <el-option
+										      v-for="item in frequencyStrings"
+										      :key="item.value"
+										      :label="item.label"
+										      :value="item.value">
+										    </el-option>
+										  </el-select>
+								 </div>
+
+								 <!-- show if daily option selected  -->
+ 								<div class="daily-option" v-if="frequency=='day'">
+ 										<div class="sform-element">
+ 											 <p>After</p>
+ 												 <el-time-select
+ 													 v-model="timePicker"
+ 													 :picker-options="{
+ 														 start: '00:00',
+ 														 step: '00:15',
+ 														 end: '23:45'
+ 													 }"
+ 													 placeholder="Select time">
+ 											 </el-time-select>
+ 										</div>
+ 								</div>
+
+								 <!-- Show if weekly option selected -->
+								<div class="weekly-option" v-if="frequency=='week'">
+									 <div class="sform-element">
+											<p>Repeat On</p>
+
+											<div id="pretty-scale">
+													<p-check v-model="days[0]" class="p-round p-fill p-icon" color="primary" off-color="primary-o" toggle>
+											        <i class="icon mdi" slot="extra"><span>S</span></i>
+											        <i class="icon mdi" slot="off-extra"><span>S</span></i>
+											        <label slot="off-label"></label>
+											    </p-check>
+
+													<p-check v-model="days[1]" class="p-round p-fill p-icon" color="primary" off-color="primary-o" toggle>
+											        <i class="icon mdi" slot="extra"><span>M</span></i>
+											        <i class="icon mdi" slot="off-extra"><span>M</span></i>
+											        <label slot="off-label"></label>
+											    </p-check>
+
+													<p-check v-model="days[2]" class="p-round p-fill p-icon" color="primary" off-color="primary-o" toggle>
+											        <i class="icon mdi" slot="extra"><span>T</span></i>
+											        <i class="icon mdi" slot="off-extra"><span>T</span></i>
+											        <label slot="off-label"></label>
+											    </p-check>
+
+													<p-check v-model="days[3]" class="p-round p-fill p-icon" color="primary" off-color="primary-o" toggle>
+											        <i class="icon mdi" slot="extra"><span>W</span></i>
+											        <i class="icon mdi" slot="off-extra"><span>W</span></i>
+											        <label slot="off-label"></label>
+											    </p-check>
+
+													<p-check v-model="days[4]" class="p-round p-fill p-icon" color="primary" off-color="primary-o" toggle>
+											        <i class="icon mdi" slot="extra"><span>T</span></i>
+											        <i class="icon mdi" slot="off-extra"><span>T</span></i>
+											        <label slot="off-label"></label>
+											    </p-check>
+
+													<p-check v-model="days[5]" class="p-round p-fill p-icon" color="primary" off-color="primary-o" toggle>
+											        <i class="icon mdi" slot="extra"><span>F</span></i>
+											        <i class="icon mdi" slot="off-extra"><span>F</span></i>
+											        <label slot="off-label"></label>
+											    </p-check>
+
+													<p-check v-model="days[6]" class="p-round p-fill p-icon" color="primary" off-color="primary-o" toggle>
+											        <i class="icon mdi" slot="extra"><span>S</span></i>
+											        <i class="icon mdi" slot="off-extra"><span>S</span></i>
+											        <label slot="off-label"></label>
+											    </p-check>
+
+									    </div>
+									 </div>
+
+									 <div class="sform-element">
+											<p>After</p>
+												<el-time-select
+												  v-model="timePicker"
+												  :picker-options="{
+												    start: '00:00',
+												    step: '00:30',
+												    end: '23:30'
+												  }"
+												  placeholder="Select time">
+											</el-time-select>
+									 </div>
+								 </div>
+
+								 <!-- Show if monthly option selected  -->
+								 <div class="monthly-option" v-if="frequency=='month'">
+										 <div class="sform-element">
+											 <p>Repeat On</p>
+											 <el-select v-model="monthlyValue" placeholder="Select" value-key="label">
+												 <el-option
+													 v-for="item in monthlyStrings"
+													 :key="item.value"
+													 :label="item.label"
+													 :value="item">
+												 </el-option>
+											 </el-select>
+										</div>
+
+										<div class="sform-element">
+ 											 <p>After</p>
+ 												 <el-time-select
+ 													 v-model="timePicker"
+ 													 :picker-options="{
+ 														 start: '00:00',
+ 														 step: '00:15',
+ 														 end: '23:45'
+ 													 }"
+ 													 placeholder="Select time">
+ 											 </el-time-select>
+ 										</div>
+								 </div>
+							</div>
+
+							<div class="has-switch-right sform-element">
+                	<ui-switch v-model="enabled" switch-position="right">Enabled</ui-switch>
+            	</div>
+
+							<div slot="footer">
+                  <ui-button @click="closeModal('schedule')">Cancel</ui-button>
+									<ui-button @click="setBackupSchedules()" color="primary">Save</ui-button>
+              </div>
+					</ui-modal>
+			</div>
+  </div>
+</script>
+
+<!--Vue JS component for backup row-->
+<script type="text/x-template" id="backup-row-template">
+    <tr v-bind:class="klass" v-bind:id="'row' + row">
+        <td data-th="Backup" v-if="zipExist">
+            <a v-bind:href="'#TB_inline?width=600&height=550&inlineId=' + backupParsedId" class="thickbox" title="Download Backup" v-bind:name="name" v-bind:data-jobid="jobId">
+                <i class="fas fa-download"></i>
+                {{ name }}
+            </a>
+        </td>
+        <td data-th="Backup" v-else>
+            {{ name }}
+        </td>
+
+        <td class="word-capitalize" data-th="Type"> {{ type }}</td>
+        <!--date-->
+        <td data-th="Date">{{ date }}</td>
+
+        <td data-th="Duration">{{ duration }}</td>
+
+        <td data-th="Status">{{ status }}</td>
+
+	            <td>
+            <a href="#" title="Delete Backup" v-bind:data-id="jobId" class="deleteRow" v-bind:id="'deleteRow'+row"><i class="far fa-trash-alt fa-2x"></i></a>
+        </td>
+    </tr>
+</script>
+
+<!--Vue Send to cloud-->
+<script type="text/x-template" id="send-to-cloud">
+    <td v-if="visible">
+        <span v-if="kloudStatus == 'uploaded' " class="fa-stack" title="Backup safely stored in cloud" >
+            <a href="#" @click="openModal('modal'+ jobId)">
+            <i class="fas fa-cloud fa-stack-2x" style="color:dodgerblue;"></i>
+            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+            </a>
+        </span>
+
+        <span v-else-if="kloudStatus == 'uploading'" class="fa-stack" title="Sending backup to cloud" >
+            <i class="fas fa-sync-alt fa-spin fa-2x fa-fw" style="color:dodgerblue;"></i>
+        </span>
+
+        <span v-else-if="kloudStatus == 'error'" class="fa-stack" title="Error sending backup to cloud" >
+            <a href="#" @click="openModal('modal'+ jobId)">
+            <i class="fas fa-exclamation-circle fa-2x" style="color:#d9534f;"></i>
+            </a>
+        </span>
+
+        <span v-else class="fa-stack">
+            <i class="fas fa-sync-alt fa-spin fa-2x fa-fw" style="color:dodgerblue;display: none"></i>
+            <a href="#" @click="openModal('modal'+ jobId)" title="Send to Cloud" v-bind:data-id="jobId" class="safeUploadRow" id="'safeUploadRow'+ row">
+                <i class="fas fa-cloud-upload-alt fa-2x" style="color:grey;" aria-hidden="true"></i>
+            </a>
+        </span>
+
+        <div class="page__demo-group">
+            <ui-modal v-bind:ref="'modal'+ jobId" title="Upload to Cloud">
+                <h2>Which cloud storage provider(s) would like to use?</h2>
+                <div v-for="provider in providers">
+                    <ui-checkbox v-if="provider === 'DROPBOX' " v-model="DROPBOX[jobId]">{{ provider }}</ui-checkbox>
+                    <ui-checkbox v-if="provider === 'GDRIVE' " v-model="GDRIVE[jobId]">{{ provider }}</ui-checkbox>
+                    <ui-checkbox v-if="provider === 'AMAZONS3' " v-model="AMAZONS3[jobId]">{{ provider }}</ui-checkbox>
+                </div>
+
+                <div slot="footer">
+                    <ui-button color="primary" @click="saveIndProviders(jobId)">Save</ui-button>
+                    <ui-button @click="closeModal('modal'+ jobId)">Close</ui-button>
+                </div>
+            </ui-modal>
+        </div>
+    </td>
+    <td v-else>&nbsp;</td>
+</script>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter" role="contentinfo">
+		<p id="footer-left" class="alignleft">
+		<span id="footer-thankyou">Thank you for creating with <a href="https://wordpress.org/">WordPress</a>.</span>	</p>
+	<p id="footer-upgrade" class="alignright">
+		<strong><a href="http://localhost/githubfile/wp-admin/update-core.php">Get Version 6.6.1</a></strong>	</p>
+	<div class="clear"></div>
+</div>
+	<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<button type="button" class="wp-auth-check-close button-link"><span class="screen-reader-text">
+		Close dialog	</span></button>
+			<div id="wp-auth-check-form" class="loading" data-src="http://localhost/githubfile/wp-login.php?interim-login=1&#038;wp_lang=en_US"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">Session expired</b></p>
+		<p><a href="http://localhost/githubfile/wp-login.php" target="_blank">Please log in again.</a>
+		The login page will open in a new tab. After logging in you can close it and return to this page.</p>
+	</div>
+	</div>
+	</div>
+	<link rel='stylesheet' id='thickbox-css' href='http://localhost/githubfile/wp-includes/js/thickbox/thickbox.css?ver=6.5' media='all' />
+<script src='http://localhost/githubfile/wp-admin/load-scripts.php?c=1&amp;load%5Bchunk_0%5D=hoverIntent,wp-polyfill-inert,regenerator-runtime,wp-polyfill,wp-hooks&amp;ver=6.5'></script>
+<script src="http://localhost/githubfile/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="http://localhost/githubfile/wp-admin/js/common.min.js?ver=6.5" id="common-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/admin-bar.min.js?ver=6.5" id="admin-bar-js"></script>
+<script src="http://localhost/githubfile/wp-admin/js/svg-painter.js?ver=6.5" id="svg-painter-js"></script>
+<script id="heartbeat-js-extra">
+var heartbeatSettings = {"nonce":"58084d169f"};
+</script>
+<script src="http://localhost/githubfile/wp-includes/js/heartbeat.min.js?ver=6.5" id="heartbeat-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/wp-auth-check.min.js?ver=6.5" id="wp-auth-check-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.2" id="jquery-ui-menu-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5" id="wp-a11y-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.2" id="jquery-ui-autocomplete-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.2" id="jquery-ui-tabs-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.2" id="jquery-ui-mouse-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.2" id="jquery-ui-sortable-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.2" id="jquery-ui-draggable-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/jquery/ui/droppable.min.js?ver=1.13.2" id="jquery-ui-droppable-js"></script>
+<script id="wp-backitup-admin-js-extra">
+var wpbackitup_local = {"upload_file_size_exceed":"The backup you have selected exceeds what your host allows you to upload.","warning":"Warning","error":"Error","response":"Response","status":"Status","download":"Download","delete":"Delete","restore":"Restore","unexpected_err":"(JS997) Unexpected error","unexpected_err2":"(JS998) Unexpected error","unexpected_err3":"(JS999) An unexpected error has occurred","scheduled_saved":"Scheduled has been saved.","scheduled_not_saved":"Scheduled was not saved.","confirm_restore":"Are you sure you want to restore your site?","sure":"Are you sure ?","file_not_del":"This file cannot be delete!","view_log":"View Log","new_backup":"New Backup!","uploaded_backup":"Uploaded Backup","bl_backup_set":"WP BackItUp Backup Set:","bl_note_save":"Save","bl_note_saved_success":"Note Saved!","bl_note_placeholder":"add notes here","bl_backup_download_single":"Download a single zip file that contains all these files.","bl_backup_download":"Below are the archive files included in this backup set. Click the link to download.","bl_please_note":"* Please note that this is a ","bl_may_timeout":" file which may timeout on some hosts.","settings_save_awesome":"Awesome!","settings_save_success_message":"Your settings has been successfully saved","settings_save_oops":"Oops...","settings_save_error_message":"Something went wrong","settings_no_database_table_to_filter":"No database table to filter","settings_select_database_table_to_filter":"Select Database table to filter","get_available_backups":"ee9b220010","get_backup_schedule":"c9e4427830","set_backup_schedule":"1935a5f036"};
+</script>
+<script src="http://localhost/githubfile/wp-content/plugins/wp-backitup/js/wp-backitup-admin.min.js?ver=1.50.0.0" id="wp-backitup-admin-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0" id="react-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js"></script>
+<script src="http://localhost/githubfile/wp-includes/js/dist/element.min.js?ver=cb762d190aebbec25b27" id="wp-element-js"></script>
+<script id="astra-theme-builder-script-js-extra">
+var astra_theme_builder = {"title":"Site Builder","rest_url":"\/wp-json\/astra-addon\/v1\/custom-layouts\/","new_custom_layout_base_url":"http:\/\/localhost\/githubfile\/wp-admin\/post-new.php?post_type=astra-advanced-hook","astra_pricing_page_url":"https:\/\/wpastra.com\/pricing\/","astra_docs_page_url":"https:\/\/wpastra.com\/docs\/custom-layouts-pro\/","admin_url":"http:\/\/localhost\/githubfile\/wp-admin\/"};
+</script>
+<script src="http://localhost/githubfile/wp-content/themes/astra/admin/assets/theme-builder/build/index.js?ver=4.6.16" id="astra-theme-builder-script-js"></script>
+<script id="thickbox-js-extra">
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/localhost\/githubfile\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+</script>
+<script src="http://localhost/githubfile/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105" id="thickbox-js"></script>
+
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload==='function')wpOnload();</script>
+</body>
+</html>
